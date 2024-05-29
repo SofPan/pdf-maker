@@ -9,15 +9,19 @@ const CreatePDF = () => {
     <Box
       sx={{
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        width: "45%",
+        marginRight: "64px",
+        border: '5px solid green',
+        padding: '24px'
       }}
     >
-      <ImageUploader />
-      <ColorSelector />
+      {/* <ImageUploader /> */}
+      {/* <ColorSelector /> */}
       <TextFieldWrapper placeholder="Title" />
-      <TextFieldWrapper placeholder="Intro" />
-      <CreateEntry />
-      <Button>Save as PDF</Button>
+      {/* <TextFieldWrapper placeholder="Intro" /> */}
+      {/* <CreateEntry /> */}
+      {/* <Button>Save as PDF</Button> */}
     </Box>
   )
 }

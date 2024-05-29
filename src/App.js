@@ -9,7 +9,10 @@ function App() {
       className="App"
       sx={{
         display: 'flex',
-        justifyContent: 'space-evenly'
+        justifyContent: 'space-evenly',
+        maxWidth: '85%',
+        width: '1440px',
+        margin: '0 auto'
       }}
     >
       {/* PDF Builder Component */}
