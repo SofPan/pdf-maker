@@ -5,7 +5,7 @@ const DyanmicButton = (props) => {
   const {
     type,
     text,
-    payload
+    payload,
   } = props;
   const {buttonState, buttonDispatch} = useButtons();
 

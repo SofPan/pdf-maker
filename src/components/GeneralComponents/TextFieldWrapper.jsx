@@ -3,12 +3,15 @@ import DynamicButton from "./DynamicButton";
 import { useState } from "react";
 
 const TextFieldWrapper = (props) => {
-  const {placeholder} = props;
+  const {placeholder, stateAction} = props;
 
-  const [payload, setPayload] = useState("");
-  
+  const [payload, setPayload] = useState({});
+
   const handleChange = (e) => {
-    setPayload(e.target.value);
+    setPayload({
+      payload: e.target.value,
+      stateAction: stateAction
+    });
   }
   return(
     <>

@@ -18,7 +18,7 @@ const CreatePDF = () => {
     >
       {/* <ImageUploader /> */}
       {/* <ColorSelector /> */}
-      <TextFieldWrapper placeholder="Title" />
+      <TextFieldWrapper placeholder="Title" stateAction="hero_title" />
       {/* <TextFieldWrapper placeholder="Intro" /> */}
       {/* <CreateEntry /> */}
       {/* <Button>Save as PDF</Button> */}
