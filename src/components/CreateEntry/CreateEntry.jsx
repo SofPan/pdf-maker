@@ -15,9 +15,9 @@ const CreateEntry = () => {
       <ImageUploader />
       <TextFieldWrapper placeholder="Description" />
       <StarRatings />
-      <Select>
+      {/* <Select>
         <option default value="select genre">An option</option>
-      </Select>
+      </Select> */}
     </>
   )
 }

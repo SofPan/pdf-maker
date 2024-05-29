@@ -6,7 +6,7 @@ const ColorSelector = (props) => {
   // Similar to pick out color from hero image
   return(
     <>
-      Color Selector
+      <p>Color Selector</p>
       <SaveAndCancelButtons />
     </>
   )
