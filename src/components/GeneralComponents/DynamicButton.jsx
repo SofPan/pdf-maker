@@ -1,22 +1,22 @@
 import { Button } from "@mui/material"
 import useButtons from "../../contexts/useButtons";
 
-const SaveAndCancelButtons = (props) => {
+const DyanmicButton = (props) => {
   const {
     type,
-    text
+    text,
+    payload
   } = props;
   const {buttonState, buttonDispatch} = useButtons();
 
   const handleClick = () => {
-    buttonDispatch({type: type, payload: 'test state'});
+    buttonDispatch({type: type, payload: payload});
   }
   return(
     <>
       <Button onClick={handleClick}>{text}</Button>
-      {/* <Button>Cancel</Button> */}
     </>
   )
 }
 
-export default SaveAndCancelButtons;
+export default DyanmicButton;

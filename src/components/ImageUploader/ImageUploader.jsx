@@ -1,9 +1,9 @@
-import SaveAndCancelButtons from "../GeneralComponents/SaveAndCancelButtons";
+import SaveAndCancelButtons from "../GeneralComponents/DynamicButton";
 import ImageUrlField from "./ImageUrlField";
 import UploadButton from "./UploadButton";
 
 const ImageUploader = () => {
-  return(
+  return (
     <>
       <UploadButton />
       <ImageUrlField />
