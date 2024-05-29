@@ -1,9 +1,14 @@
-import { Box, Button } from '@mui/material';
+import { createContext } from 'react';
 import './App.css';
 import CreatePDF from './components/PDF-Builder/CreatePDF';
 import PreviewPane from './components/PreviewPane/PreviewPane';
+import { Box } from '@mui/material';
+import useCreatedElements from './contexts/useCreatedElements';
 
+export const AppContext = createContext();
 function App() {
+
+  const { state, dispatch } = useCreatedElements();
   return (
     <Box
       className="App"
@@ -15,10 +20,12 @@ function App() {
         margin: '0 auto'
       }}
     >
-      {/* PDF Builder Component */}
-      <CreatePDF />
-      {/* Preview Pane Component */}
-      <PreviewPane />
+      <AppContext.Provider value={{ state, dispatch }}>
+        {/* PDF Builder Component */}
+        <CreatePDF />
+        {/* Preview Pane Component */}
+        <PreviewPane />
+      </AppContext.Provider>
     </Box>
   );
 }
