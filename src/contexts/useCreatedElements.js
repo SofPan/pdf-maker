@@ -1,3 +1,4 @@
+import { useReducer } from "react"
 
 export const ACTIONS = {
   EDIT_HERO: "hero_img",
@@ -63,6 +64,13 @@ const useCreatedElements = () => {
         rating: '4.5',
         description: 'lorem, ipsum dolor sit amet consectetur adipisicing'
       }]
+  }
+
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  return {
+    state,
+    dispatch
   }
 
 }
