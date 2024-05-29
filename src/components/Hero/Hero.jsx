@@ -1,6 +1,10 @@
 import { Box } from "@mui/material"
+import useCreatedElements from "../../contexts/useCreatedElements";
 
 const Hero = () => {
+
+  const {state} = useCreatedElements();
+
   return(
     <Box 
       sx={{
@@ -10,8 +14,8 @@ const Hero = () => {
         height:"250px"
       }}
     >
-      <h1>A Title</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nesciunt corrupti delectus itaque, sint consequuntur sequi voluptatem nobis mollitia, assumenda sunt voluptatibus! Vero tempora est, molestias veritatis ex quae praesentium.</p>
+      <h1>{state.hero_title}</h1>
+      <p>{state.hero_description}</p>
     </Box>
   )
 }
