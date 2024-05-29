@@ -20,7 +20,9 @@ const useButtons = () => {
   const { dispatch } = useCreatedElements();
 
   const initialButtonState = {
-    edit_state: (state) => console.log("edit state", state),
+    edit_state: (payload) => {
+      dispatch({ type: payload.stateAction, payload: payload.payload })
+    },
   }
 
   const [buttonState, buttonDispatch] = useReducer(buttonReducer, initialButtonState);

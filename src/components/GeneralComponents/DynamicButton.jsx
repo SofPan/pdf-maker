@@ -1,7 +1,7 @@
 import { Button } from "@mui/material"
 import useButtons from "../../contexts/useButtons";
 
-const DyanmicButton = (props) => {
+const DynamicButton = (props) => {
   const {
     type,
     text,
@@ -19,4 +19,4 @@ const DyanmicButton = (props) => {
   )
 }
 
-export default DyanmicButton;
+export default DynamicButton;
