@@ -5,7 +5,7 @@ const TextFieldWrapper = (props) => {
   return(
     <>
       <TextField placeholder={props.placeholder}/>
-      <SaveAndCancelButtons />
+      <SaveAndCancelButtons text="Save" type="edit"/>
     </>
   )
 }
