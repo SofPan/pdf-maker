@@ -9,6 +9,7 @@ export const AppContext = createContext();
 function App() {
 
   const { state, dispatch } = useCreatedElements();
+  console.log("app state", state);
   return (
     <Box
       className="App"

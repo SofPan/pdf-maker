@@ -65,7 +65,6 @@ const useCreatedElements = () => {
         description: 'lorem, ipsum dolor sit amet consectetur adipisicing'
       }]
   }
-
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return {

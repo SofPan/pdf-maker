@@ -1,9 +1,14 @@
+import { useContext, useEffect } from "react";
+import { AppContext } from "../../App";
 import { Box } from "@mui/material"
-import useCreatedElements from "../../contexts/useCreatedElements";
 
 const Hero = () => {
 
-  const {state} = useCreatedElements();
+  const {state} = useContext(AppContext);
+
+  useEffect(() => {
+    console.log("inside useEffect", state);
+  }, [state])
 
   return(
     <Box 

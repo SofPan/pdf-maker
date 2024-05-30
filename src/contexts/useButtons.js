@@ -1,5 +1,5 @@
-import { useReducer } from "react";
-import useCreatedElements from "./useCreatedElements";
+import { useContext, useReducer } from "react";
+import { AppContext } from "../App";
 
 export const ACTIONS = {
   EDIT: 'edit',
@@ -17,7 +17,7 @@ const buttonReducer = (state, action) => {
 }
 
 const useButtons = () => {
-  const { dispatch } = useCreatedElements();
+  const { dispatch } = useContext(AppContext);
 
   const initialButtonState = {
     edit_state: (payload) => {
