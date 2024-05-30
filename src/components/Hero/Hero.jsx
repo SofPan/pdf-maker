@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { AppContext } from "../../App";
 import { Box } from "@mui/material"
 
@@ -6,16 +6,14 @@ const Hero = () => {
 
   const {state} = useContext(AppContext);
 
-  useEffect(() => {
-    console.log("inside useEffect", state);
-  }, [state])
-
   return(
     <Box 
+    // TODO: These will be dynamic once options are implemented
       sx={{
-        backgroundImage: 'url(https://picsum.photos/500/250)',
-        backgroundSize: 'cover',
+        backgroundImage: `url(${state.hero_img})`,
+        backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
         height:"250px"
       }}
     >
