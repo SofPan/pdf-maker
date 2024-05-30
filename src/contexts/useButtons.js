@@ -10,7 +10,9 @@ export const ACTIONS = {
 const buttonReducer = (state, action) => {
   switch (action.type) {
     case ACTIONS.EDIT:
-      return state.edit_state(action.payload)
+      return state.edit_state(action.payload);
+    case ACTIONS.CANCEL:
+      return;
     default:
       throw new Error("Unsupported Button Type", action.type);
   }

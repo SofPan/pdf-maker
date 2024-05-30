@@ -18,7 +18,7 @@ const reducer = (state, action) => {
     case ACTIONS.EDIT_HERO:
       return { ...state, hero_img: action.payload }
     case ACTIONS.EDIT_TITLE:
-      return { ...state, hero_title: action.payload }
+      return { ...state, hero_title: action.payload ? action.payload : "Title" }
     case ACTIONS.EDIT_DESCRIPTION:
       return { ...state, hero_description: action.payload }
     case ACTIONS.EDIT_BG_COLOR:

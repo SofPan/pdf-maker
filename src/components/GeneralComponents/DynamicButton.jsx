@@ -8,6 +8,7 @@ const DynamicButton = (props) => {
     payload,
     callback
   } = props;
+  
   const {buttonState, buttonDispatch} = useButtons();
 
   const handleClick = () => {
