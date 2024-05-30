@@ -1,10 +1,10 @@
-import { InputLabel, TextField } from "@mui/material"
+import { Box, InputLabel, TextField, TextareaAutosize } from "@mui/material"
 import DynamicButton from "./DynamicButton";
 import { useContext, useState } from "react";
 import { AppContext } from "../../App";
 
 const TextFieldWrapper = (props) => {
-  const {placeholder, stateAction} = props;
+  const {placeholder, stateAction, min} = props;
   const { dispatch } = useContext(AppContext);
 
   const [fieldValue, setFieldValue] = useState("");
@@ -22,12 +22,11 @@ const TextFieldWrapper = (props) => {
   }
 
   return(
-    <>
+    <Box maxWidth="500px" display="flex" flexDirection="column">
       <InputLabel>{placeholder}</InputLabel>
-      <TextField placeholder={placeholder} onChange={handleChange} value={fieldValue} />
-      {/* <DynamicButton text="Save" type="edit" payload={payload} callback={handleClear} /> */}
+      <TextareaAutosize minRows={min ? min : 2} maxRows={6} placeholder={placeholder} onChange={handleChange} value={fieldValue} />
       <DynamicButton text="Clear" type="cancel" callback={handleClear}/>
-    </>
+    </Box>
   )
 }
 

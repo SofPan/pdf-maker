@@ -2,7 +2,7 @@ import ColorSelector from "../ColorSelector/ColorSelector";
 import ImageUploader from "../ImageUploader/ImageUploader";
 import TextFieldWrapper from "../GeneralComponents/TextFieldWrapper";
 import CreateEntry from "../CreateEntry/CreateEntry";
-import { Box, Button } from "@mui/material";
+import { Box, Button, TextareaAutosize } from "@mui/material";
 
 const CreatePDF = () => {
   return(
@@ -19,7 +19,7 @@ const CreatePDF = () => {
       {/* <ImageUploader /> */}
       {/* <ColorSelector /> */}
       <TextFieldWrapper placeholder="Title" stateAction="hero_title" />
-      <TextFieldWrapper placeholder="Intro" stateAction="hero_description" />
+      <TextFieldWrapper placeholder="Introductory Paragraph" stateAction="hero_description" min={4} />
       {/* <CreateEntry /> */}
       {/* <Button>Save as PDF</Button> */}
     </Box>
