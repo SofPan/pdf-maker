@@ -1,5 +1,11 @@
 import { useReducer } from "react"
 
+export const DEFAULTS = {
+  IMG: './assets/placeholder.png',
+  TITLE: 'Title',
+  DESCRIPTION: 'Lorem, ipsum dolor sit amet consectetur adipisicing'
+}
+
 export const ACTIONS = {
   EDIT_HERO: "hero_img",
   EDIT_TITLE: "hero_title",
@@ -16,11 +22,11 @@ export const ACTIONS = {
 const reducer = (state, action) => {
   switch (action.type) {
     case ACTIONS.EDIT_HERO:
-      return { ...state, hero_img: action.payload }
+      return { ...state, hero_img: action.payload ? action.payload : DEFAULTS.IMG }
     case ACTIONS.EDIT_TITLE:
-      return { ...state, hero_title: action.payload ? action.payload : "Title" }
+      return { ...state, hero_title: action.payload ? action.payload : DEFAULTS.TITLE }
     case ACTIONS.EDIT_DESCRIPTION:
-      return { ...state, hero_description: action.payload }
+      return { ...state, hero_description: action.payload ? action.payload : DEFAULTS.DESCRIPTION }
     case ACTIONS.EDIT_BG_COLOR:
       return { ...state, background_color: action.payload }
     case ACTIONS.EDIT_TITLE_FONT:
@@ -50,9 +56,9 @@ const reducer = (state, action) => {
 
 const useCreatedElements = () => {
   const initialState = {
-    hero_img: './assets/placeholder.png',
-    hero_title: 'Title',
-    hero_description: 'Lorem, ipsum dolor sit amet consectetur adipisicing',
+    hero_img: DEFAULTS.IMG,
+    hero_title: DEFAULTS.TITLE,
+    hero_description: DEFAULTS.DESCRIPTION,
     background_color: '#ccc',
     title_font: 'serif',
     body_font: 'sans-serif',

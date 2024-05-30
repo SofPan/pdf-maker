@@ -23,7 +23,7 @@ const TextFieldWrapper = (props) => {
 
   return(
     <>
-      <InputLabel>Title</InputLabel>
+      <InputLabel>{placeholder}</InputLabel>
       <TextField placeholder={placeholder} onChange={handleChange} value={fieldValue} />
       {/* <DynamicButton text="Save" type="edit" payload={payload} callback={handleClear} /> */}
       <DynamicButton text="Clear" type="cancel" callback={handleClear}/>
