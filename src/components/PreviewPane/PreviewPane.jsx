@@ -8,9 +8,10 @@ const PreviewPane = () => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        width:"50vw",
         border: "5px solid navy",
-        padding: "12px"
+        padding: "12px",
+        aspectRatio: "16/9",
+        maxWidth: "50vw"
       }}
     >
       <Hero />

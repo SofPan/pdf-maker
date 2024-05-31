@@ -81,7 +81,7 @@ const useCreatedElements = () => {
         title: 'Fiction entry',
         img_src: DEFAULTS.IMG,
         rating: '4.5',
-        description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy cheese and biscuits.',
+        description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheeseDolcelatte cut the cheese',
         section: 'General Fiction'
       },
       {
@@ -89,7 +89,7 @@ const useCreatedElements = () => {
         title: 'Fiction entry',
         img_src: DEFAULTS.IMG,
         rating: '4.5',
-        description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy cheese and biscuits.',
+        description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheeseDolcelatte cut the cheese',
         section: 'General Fiction'
       },
       {
@@ -97,7 +97,7 @@ const useCreatedElements = () => {
         title: 'Fiction entry',
         img_src: DEFAULTS.IMG,
         rating: '4.5',
-        description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy cheese and biscuits.',
+        description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheeseDolcelatte cut the cheese',
         section: 'General Fiction'
       },
       {
@@ -105,7 +105,7 @@ const useCreatedElements = () => {
         title: 'Fiction entry',
         img_src: DEFAULTS.IMG,
         rating: '4.5',
-        description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy cheese and biscuits.',
+        description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheeseDolcelatte cut the cheese',
         section: 'General Fiction'
       },
       {

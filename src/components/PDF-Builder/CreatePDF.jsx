@@ -10,7 +10,7 @@ const CreatePDF = () => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        width: "45%",
+        minWidth: "30vw",
         marginRight: "64px",
         border: '5px solid green',
         padding: '24px'

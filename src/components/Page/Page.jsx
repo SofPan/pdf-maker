@@ -12,9 +12,11 @@ const Page = ({pageTitle}) => {
     return <Entry key={entry.id} entry={entry} />
   })
   return(
-    <Box>
+    <Box display="flex" flexDirection="column" alignItems="center">
       <h2>{pageTitle}</h2>
-      {filterAndMapEntries}
+      <Box margin="0 auto" width="100%" display="flex" justifyContent="center" flexWrap="wrap">
+        {filterAndMapEntries}
+      </Box>
     </Box>
   )
 }
