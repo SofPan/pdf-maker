@@ -1,4 +1,12 @@
 export const determineColumns = (description) => {
-  // determine max-width of a column based on text length
-  return;
+  switch (description) {
+    case description.length <= 250:
+      return "22%"
+    case description.length <= 500:
+      return "47%"
+    case description.length <= 750:
+      return "72%"
+    default:
+      return "85%"
+  }
 }
