@@ -1,8 +1,11 @@
-import { Input } from "@mui/material";
+import { FormControl, FormControlLabel, FormLabel, Input, Radio, RadioGroup } from "@mui/material";
 
 const ImageUrlField = () => {
   return(
-    <Input type="file" placeholder="file path or url"></Input>
+    <>
+      <RadioGroup></RadioGroup>
+      <Input type="file" placeholder="file path or url"></Input>
+    </>
   )
 }
 

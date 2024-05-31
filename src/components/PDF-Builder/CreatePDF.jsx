@@ -16,7 +16,7 @@ const CreatePDF = () => {
         padding: '24px'
       }}
     >
-      {/* <ImageUploader /> */}
+      <ImageUploader />
       {/* <ColorSelector /> */}
       <TextFieldWrapper placeholder="Title" stateAction="hero_title" />
       <TextFieldWrapper placeholder="Introductory Paragraph" stateAction="hero_description" min={4} />

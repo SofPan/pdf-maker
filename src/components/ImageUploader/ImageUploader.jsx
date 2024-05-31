@@ -1,13 +1,15 @@
 import SaveAndCancelButtons from "../GeneralComponents/DynamicButton";
+import FormControls from "./FormControls";
 import ImageUrlField from "./ImageUrlField";
 import UploadButton from "./UploadButton";
 
 const ImageUploader = () => {
   return (
     <>
-      <UploadButton />
-      <ImageUrlField />
-      <SaveAndCancelButtons />
+      <FormControls />
+      {/* <ImageUrlField /> */}
+      {/* <UploadButton />
+      <SaveAndCancelButtons /> */}
     </>
   )
 }
