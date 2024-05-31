@@ -2,15 +2,13 @@ import { FormControl, FormControlLabel, FormLabel, Input, Radio, RadioGroup } fr
 import ImageField from "./ImageField";
 import { useState } from "react";
 
-const FormControls = () => {
-  const [fieldType, setFieldType] = useState("url");
+const FormControls = ({handleFieldChange}) => {
 
   const handleChange = (e) => {
-    setFieldType(e.target.value);
+    handleFieldChange(e.target.value);
   }
 
   return(
-    <form>
       <FormControl>
         <FormLabel id="demo-radio-buttons-group-label">Image Source</FormLabel>
         <RadioGroup
@@ -23,8 +21,6 @@ const FormControls = () => {
           <FormControlLabel value="file" control={<Radio />} label="File Select" />
         </RadioGroup>
       </FormControl>
-      <ImageField type={fieldType} /> 
-    </form>
   )
 }
 
