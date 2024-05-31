@@ -1,10 +1,10 @@
 import { Box } from "@mui/material"
 import Entry from "../Entry/Entry";
 
-const Page = () => {
+const Page = ({pageTitle}) => {
   return(
     <Box>
-      <h2>Section Title</h2>
+      <h2>{pageTitle}</h2>
       {/* Entries */}
       <Entry />
       <Entry />

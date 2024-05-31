@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import Hero from "../Hero/Hero";
-import Page from "../Page/Page";
+import Pages from "../Page/Pages";
 
 const PreviewPane = () => {
   return(
@@ -14,7 +14,7 @@ const PreviewPane = () => {
       }}
     >
       <Hero />
-      <Page />
+      <Pages />
     </Box>
   )
 }
