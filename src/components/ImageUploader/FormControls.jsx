@@ -1,15 +1,12 @@
 import { FormControl, FormControlLabel, FormLabel, Input, Radio, RadioGroup } from "@mui/material";
-import ImageUrlField from "./ImageUrlField";
+import ImageField from "./ImageField";
 import { useState } from "react";
 
 const FormControls = () => {
-  const fileSelect = "";
-  const urlSelect = <ImageUrlField />
-
-  const [fieldType, setFieldType] = useState(urlSelect);
+  const [fieldType, setFieldType] = useState("url");
 
   const handleChange = (e) => {
-    setFieldType(e.target.value === 'url' ? urlSelect : fileSelect);
+    setFieldType(e.target.value);
   }
 
   return(
@@ -26,7 +23,7 @@ const FormControls = () => {
           <FormControlLabel value="file" control={<Radio />} label="File Select" />
         </RadioGroup>
       </FormControl>
-      {fieldType}
+      <ImageField type={fieldType} /> 
     </form>
   )
 }
