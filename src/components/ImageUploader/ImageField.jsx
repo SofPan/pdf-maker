@@ -2,9 +2,7 @@ import { Input} from "@mui/material";
 
 const ImageField = ({type}) => {
   return(
-    <>
-      <Input type={type} placeholder="Paste URL"></Input>
-    </>
+      <Input type={type} placeholder={`Image ${type}`}></Input>
   )
 }
 
