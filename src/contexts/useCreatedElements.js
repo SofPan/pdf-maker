@@ -62,14 +62,45 @@ const useCreatedElements = () => {
     background_color: '#ccc',
     title_font: 'serif',
     body_font: 'sans-serif',
-    sections: ["General Fiction", "Sci-fi/Fantasy", "Horror"],
+    sections: [
+      {
+        id: 1,
+        genre: "General Fiction"
+      }, {
+        id: 2,
+        genre: "Sci-fi/Fantasy",
+      },
+      {
+        id: 3,
+        genre: "Horror"
+      }
+    ],
     entries: [
       {
-        title: 'sample entry',
-        img_src: './assets/placeholder.png',
+        id: 1,
+        title: 'Fiction entry',
+        img_src: DEFAULTS.IMG,
         rating: '4.5',
-        description: 'lorem, ipsum dolor sit amet consectetur adipisicing'
-      }]
+        description: 'lorem, ipsum dolor sit amet consectetur adipisicing',
+        section: 'General Fiction'
+      },
+      {
+        id: 2,
+        title: 'Scifi entry',
+        img_src: DEFAULTS.IMG,
+        rating: '4.5',
+        description: 'lorem, ipsum dolor sit amet consectetur adipisicing',
+        section: 'Sci-fi/Fantasy'
+      },
+      {
+        id: 3,
+        title: 'Horror entry',
+        img_src: DEFAULTS.IMG,
+        rating: '4.5',
+        description: 'lorem, ipsum dolor sit amet consectetur adipisicing',
+        section: 'Horror'
+      }
+    ]
   }
   const [state, dispatch] = useReducer(reducer, initialState);
 

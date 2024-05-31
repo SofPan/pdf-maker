@@ -7,7 +7,7 @@ const Pages = () => {
   const {state} = useContext(AppContext);
   
   const mapPages = state.sections.map(section => {
-    return <Page pageTitle={section} />
+    return <Page pageTitle={section.genre} key={section.id} />
   })
 
   return(

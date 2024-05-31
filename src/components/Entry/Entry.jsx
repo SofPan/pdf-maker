@@ -1,16 +1,16 @@
 import { Box } from "@mui/material";
 
-const Entry = () => {
-  // 
+const Entry = ({entry}) => {
+  
   return(
     <Box sx={{display: "flex"}}>
-      <Box marginRight="24px">
-        <img src="https://picsum.photos/150" alt="cover"/>
-        <p>Ratings</p>
+      <Box marginRight="24px" width="30%">
+        <img width="75%" src={entry.img_src} alt={`cover for ${entry.title}`}/>
+        <p>{entry.rating}</p>
       </Box>
       <Box width="60%">
-        <h3>Title</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur asperiores inventore iste. Voluptatibus porro delectus, quam, commodi totam itaque quas deserunt impedit quos rem officiis nam qui amet repellat?</p>
+        <h3>{entry.title}</h3>
+        <p>{entry.description}</p>
       </Box>
     </Box>
   )
