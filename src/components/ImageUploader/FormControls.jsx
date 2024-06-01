@@ -1,11 +1,9 @@
-import { FormControl, FormControlLabel, FormLabel, Input, Radio, RadioGroup } from "@mui/material";
-import ImageField from "./ImageField";
-import { useState } from "react";
+import { FormControl, FormControlLabel, FormLabel,Radio, RadioGroup } from "@mui/material";
 
-const FormControls = ({handleFieldChange}) => {
+const FormControls = ({handleFieldTypeChange}) => {
 
   const handleChange = (e) => {
-    handleFieldChange(e.target.value);
+    handleFieldTypeChange(e.target.value);
   }
 
   return(

@@ -1,23 +1,30 @@
 import { useState } from "react";
-import SaveAndCancelButtons from "../GeneralComponents/DynamicButton";
 import FormControls from "./FormControls";
 import ImageField from "./ImageField";
-import UploadButton from "./UploadButton";
+import DynamicButton from "../GeneralComponents/DynamicButton";
 
 const ImageUploader = () => {
   const [fieldType, setFieldType] = useState("url");
+  const [payload, setPayload] = useState({payload: './assets/placeholder.png', stateAction: "hero_img"});
 
-  const handleFieldChange = (fieldValue) => {
+  const handleFieldTypeChange = (fieldValue) => {
     setFieldType(fieldValue);
   }
+
+  // https://picsum.photos/1000/1200
+
+  const handleInputValueChange = (inputValue) => {
+    setPayload(prev => ({
+      ...prev,
+      payload: inputValue
+    }));
+  }
+
   return (
     <form>
-      <FormControls handleFieldChange={handleFieldChange} />
-      <ImageField type={fieldType} /> 
-
-      {/* <ImageUrlField /> */}
-      {/* <UploadButton />
-      <SaveAndCancelButtons /> */}
+      <FormControls handleFieldTypeChange={handleFieldTypeChange} />
+      <ImageField type={fieldType} handleInputValueChange={handleInputValueChange}/> 
+      <DynamicButton type="edit" text="Save" payload={payload}  />
     </form>
   )
 }

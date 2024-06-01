@@ -1,8 +1,13 @@
 import { Input} from "@mui/material";
 
-const ImageField = ({type}) => {
+const ImageField = ({type, handleInputValueChange}) => {
+  
+  const handleChange = (e) => {
+    console.log("val", e.target.value);
+    handleInputValueChange(e.target.value);
+  }
   return(
-      <Input type={type} placeholder={`Image ${type}`}></Input>
+      <Input onChange={handleChange} type={type} placeholder={`Image ${type}`}></Input>
   )
 }
 

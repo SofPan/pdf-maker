@@ -20,6 +20,7 @@ export const ACTIONS = {
 }
 
 const reducer = (state, action) => {
+  console.log("receiving in useCreatedElements", action);
   switch (action.type) {
     case ACTIONS.EDIT_HERO:
       return { ...state, hero_img: action.payload ? action.payload : DEFAULTS.IMG }
