@@ -85,78 +85,78 @@ const useCreatedElements = () => {
         description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheeseDolcelatte cut the cheese',
         section: 'General Fiction'
       },
-      {
-        id: 4,
-        title: 'Fiction entry',
-        img_src: DEFAULTS.IMG,
-        rating: '4.5',
-        description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheeseDolcelatte cut the cheese',
-        section: 'General Fiction'
-      },
-      {
-        id: 5,
-        title: 'Fiction entry',
-        img_src: DEFAULTS.IMG,
-        rating: '4.5',
-        description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheeseDolcelatte cut the cheese',
-        section: 'General Fiction'
-      },
-      {
-        id: 6,
-        title: 'Fiction entry',
-        img_src: DEFAULTS.IMG,
-        rating: '4.5',
-        description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheeseDolcelatte cut the cheese',
-        section: 'General Fiction'
-      },
-      {
-        id: 2,
-        title: 'Scifi entry',
-        img_src: DEFAULTS.IMG,
-        rating: '4.5',
-        description: '3 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings. I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar.',
-        section: 'Sci-fi/Fantasy'
-      },
-      {
-        id: 7,
-        title: 'Scifi entry',
-        img_src: DEFAULTS.IMG,
-        rating: '4.5',
-        description: '3 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings. I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar.',
-        section: 'Sci-fi/Fantasy'
-      },
-      {
-        id: 8,
-        title: 'Scifi entry',
-        img_src: DEFAULTS.IMG,
-        rating: '4.5',
-        description: '3 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings. I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar.',
-        section: 'Sci-fi/Fantasy'
-      },
-      {
-        id: 3,
-        title: 'Horror entry',
-        img_src: DEFAULTS.IMG,
-        rating: '4.5',
-        description: '2 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings.I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings.',
-        section: 'Horror'
-      },
-      {
-        id: 9,
-        title: 'Horror entry',
-        img_src: DEFAULTS.IMG,
-        rating: '4.5',
-        description: '2 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings.I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings.',
-        section: 'Horror'
-      },
-      {
-        id: 10,
-        title: 'Horror entry',
-        img_src: DEFAULTS.IMG,
-        rating: '4.5',
-        description: '1 COLUMN I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings.I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings.Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese string',
-        section: 'Horror'
-      }
+      // {
+      //   id: 4,
+      //   title: 'Fiction entry',
+      //   img_src: DEFAULTS.IMG,
+      //   rating: '4.5',
+      //   description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheeseDolcelatte cut the cheese',
+      //   section: 'General Fiction'
+      // },
+      // {
+      //   id: 5,
+      //   title: 'Fiction entry',
+      //   img_src: DEFAULTS.IMG,
+      //   rating: '4.5',
+      //   description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheeseDolcelatte cut the cheese',
+      //   section: 'General Fiction'
+      // },
+      // {
+      //   id: 6,
+      //   title: 'Fiction entry',
+      //   img_src: DEFAULTS.IMG,
+      //   rating: '4.5',
+      //   description: '4 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheeseDolcelatte cut the cheese',
+      //   section: 'General Fiction'
+      // },
+      // {
+      //   id: 2,
+      //   title: 'Scifi entry',
+      //   img_src: DEFAULTS.IMG,
+      //   rating: '4.5',
+      //   description: '3 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings. I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar.',
+      //   section: 'Sci-fi/Fantasy'
+      // },
+      // {
+      //   id: 7,
+      //   title: 'Scifi entry',
+      //   img_src: DEFAULTS.IMG,
+      //   rating: '4.5',
+      //   description: '3 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings. I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar.',
+      //   section: 'Sci-fi/Fantasy'
+      // },
+      // {
+      //   id: 8,
+      //   title: 'Scifi entry',
+      //   img_src: DEFAULTS.IMG,
+      //   rating: '4.5',
+      //   description: '3 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings. I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar.',
+      //   section: 'Sci-fi/Fantasy'
+      // },
+      // {
+      //   id: 3,
+      //   title: 'Horror entry',
+      //   img_src: DEFAULTS.IMG,
+      //   rating: '4.5',
+      //   description: '2 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings.I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings.',
+      //   section: 'Horror'
+      // },
+      // {
+      //   id: 9,
+      //   title: 'Horror entry',
+      //   img_src: DEFAULTS.IMG,
+      //   rating: '4.5',
+      //   description: '2 COLUMNS I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings.I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings.',
+      //   section: 'Horror'
+      // },
+      // {
+      //   id: 10,
+      //   title: 'Horror entry',
+      //   img_src: DEFAULTS.IMG,
+      //   rating: '4.5',
+      //   description: '1 COLUMN I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings.I love cheese, especially cauliflower cheese cheese on toast. Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings.Port-salut feta monterey jack babybel manchego danish fontina fondue cheddar. Dolcelatte cut the cheese swiss blue castello boursin cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese strings cut the cheese cheesy feet cheese and biscuits. Cheese and biscuits squirty cheese cheese string',
+      //   section: 'Horror'
+      // }
     ]
   }
   const [state, dispatch] = useReducer(reducer, initialState);
