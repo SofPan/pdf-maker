@@ -11,12 +11,12 @@ const ImageUploader = () => {
     setFieldType(fieldValue);
   }
 
-  // https://picsum.photos/1000/1200
+  // TEST URL: https://picsum.photos/1000/1200
 
   const handleInputValueChange = (inputValue) => {
     setPayload(prev => ({
       ...prev,
-      payload: inputValue
+      payload: fieldType === 'url' ? inputValue : ""
     }));
   }
 
