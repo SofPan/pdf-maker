@@ -16,9 +16,9 @@ const DynamicButton = (props) => {
     callback && callback();
   }
   return(
-    <>
+    <div className="btn-img">
       <Button onClick={handleClick}>{text}</Button>
-    </>
+    </div>
   )
 }
 

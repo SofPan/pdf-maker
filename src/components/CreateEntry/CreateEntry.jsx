@@ -3,6 +3,7 @@ import StarRatings from "./StarRatings";
 import TextFieldWrapper from "../GeneralComponents/TextFieldWrapper";
 import { Accordion, AccordionDetails, AccordionSummary, Button, Input, Select } from "@mui/material";
 import { useState } from "react";
+import DynamicButton from "../GeneralComponents/DynamicButton";
 
 // TODO: Refactor this to work with ratings
 // $(':radio').change(function() {
@@ -21,12 +22,15 @@ const CreateEntry = () => {
       </AccordionSummary>
       <AccordionDetails>
         <TextFieldWrapper placeholder="Title" />
-        <ImageUploader />
-        <TextFieldWrapper placeholder="Description" />
+        <span className="entry-image-uploader">
+          <ImageUploader />
+        </span>
+        <TextFieldWrapper placeholder="Description" min={4}/>
         <StarRatings />
         {/* <Select>
           <option default value="select genre">An option</option>
         </Select> */}
+        <DynamicButton />
       </AccordionDetails>
     </Accordion>
   )
