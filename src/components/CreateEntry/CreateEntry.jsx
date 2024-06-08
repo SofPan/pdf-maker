@@ -1,9 +1,10 @@
+import { useState } from "react";
 import ImageUploader from "../ImageUploader/ImageUploader";
 import StarRatings from "./StarRatings";
 import TextFieldWrapper from "../GeneralComponents/TextFieldWrapper";
-import { Accordion, AccordionDetails, AccordionSummary, Button, Input, Select } from "@mui/material";
-import { useState } from "react";
 import DynamicButton from "../GeneralComponents/DynamicButton";
+import SelectGenre from "./SelectGenre";
+import { Accordion, AccordionDetails, AccordionSummary, Button} from "@mui/material";
 
 // TODO: Refactor this to work with ratings
 // $(':radio').change(function() {
@@ -27,9 +28,7 @@ const CreateEntry = () => {
         </span>
         <TextFieldWrapper placeholder="Description" min={4}/>
         <StarRatings />
-        {/* <Select>
-          <option default value="select genre">An option</option>
-        </Select> */}
+        <SelectGenre />
         <DynamicButton />
       </AccordionDetails>
     </Accordion>
