@@ -1,24 +1,34 @@
-import { Button, Input, Select } from "@mui/material";
-import TextFieldWrapper from "../GeneralComponents/TextFieldWrapper";
 import ImageUploader from "../ImageUploader/ImageUploader";
 import StarRatings from "./StarRatings";
+import TextFieldWrapper from "../GeneralComponents/TextFieldWrapper";
+import { Accordion, AccordionDetails, AccordionSummary, Button, Input, Select } from "@mui/material";
+import { useState } from "react";
 
 // TODO: Refactor this to work with ratings
 // $(':radio').change(function() {
 //   console.log('New star rating: ' + this.value);
 // });
 const CreateEntry = () => {
+  const [expanded, setExpanded] = useState(false);
+
   return(
-    <>
-      <Button>Add New Entry</Button>
-      <TextFieldWrapper placeholder="Title" />
-      <ImageUploader />
-      <TextFieldWrapper placeholder="Description" />
-      <StarRatings />
-      {/* <Select>
-        <option default value="select genre">An option</option>
-      </Select> */}
-    </>
+    <Accordion
+      expanded={expanded} 
+      onClick={() => setExpanded(!expanded)} 
+    >
+      <AccordionSummary>
+        <Button>Add New Entry</Button>
+      </AccordionSummary>
+      <AccordionDetails>
+        <TextFieldWrapper placeholder="Title" />
+        <ImageUploader />
+        <TextFieldWrapper placeholder="Description" />
+        <StarRatings />
+        {/* <Select>
+          <option default value="select genre">An option</option>
+        </Select> */}
+      </AccordionDetails>
+    </Accordion>
   )
 }
 

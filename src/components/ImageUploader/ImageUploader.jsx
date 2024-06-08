@@ -22,7 +22,7 @@ const ImageUploader = () => {
 
   return (
     <form>
-      <FormControls handleFieldTypeChange={handleFieldTypeChange} />
+      {/* <FormControls handleFieldTypeChange={handleFieldTypeChange} /> */}
       <ImageField type={fieldType} handleInputValueChange={handleInputValueChange}/> 
       <DynamicButton type="edit" text="Save" payload={payload}  />
     </form>

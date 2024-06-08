@@ -24,7 +24,7 @@ const TextFieldWrapper = (props) => {
   return(
     <Box maxWidth="500px" display="flex" flexDirection="column">
       <InputLabel>{placeholder}</InputLabel>
-      <TextareaAutosize minRows={min ? min : 2} maxRows={6} placeholder={placeholder} onChange={handleChange} value={fieldValue} />
+      <TextareaAutosize minRows={min ? min : 2} maxRows={6} placeholder={placeholder} onChange={handleChange} value={fieldValue} onClick={e => e.stopPropagation()}/>
       <DynamicButton text="Clear" type="cancel" callback={handleClear}/>
     </Box>
   )
