@@ -21,11 +21,11 @@ const ImageUploader = () => {
   }
 
   return (
-    <form>
+    <div onClick={e => e.stopPropagation()}>
       {/* <FormControls handleFieldTypeChange={handleFieldTypeChange} /> */}
       <ImageField type={fieldType} handleInputValueChange={handleInputValueChange}/> 
       <DynamicButton type="edit" text="Save" payload={payload}  />
-    </form>
+    </div>
   )
 }
 
